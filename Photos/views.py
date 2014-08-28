@@ -1,8 +1,7 @@
 from django.shortcuts import get_object_or_404, render_to_response
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
-from django.template import RequestContext
-from django.middleware.csrf import CsrfResponseMiddleware
+from django.template import Context
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core import serializers
@@ -22,18 +21,18 @@ from common.UploadProgressHandler import *
 
 
 def start(request, view):
-	return render_to_response(view, {} , context_instance=RequestContext(request) )
+	return render_to_response(view, {} , context_instance=Context(request) )
 
 def getTmpPhotos(request):
 	user = User.objects.get(pk=request.session['logged']['id'])
 	tmpP = tmpPhoto.objects.filter(owner=user)
-	return render_to_response(request.GET['view'], { 'Photos' : tmpP } , context_instance=RequestContext(request) )
+	return render_to_response(request.GET['view'], { 'Photos' : tmpP } , context_instance=Context(request) )
 
 def getBoundPhotos(request):
 	if request.method == "GET":
 		user = User.objects.get(pk=request.session['logged']['id'])
 		data = { 'Photos' : user.getPhotosByBound(request.GET['ca_b'], request.GET['ca_j'], request.GET['ea_b'], request.GET['ea_j']) }
-		return render_to_response(request.GET['view'], data , context_instance=RequestContext(request) )
+		return render_to_response(request.GET['view'], data , context_instance=Context(request) )
 	else:
 		result = MessageVO(_type=False, msg=MessageCode._001)
 		return HttpResponse(result.getJSON(), mimetype='application/json')
@@ -66,7 +65,7 @@ def addTmpPhoto(request):
 def getPhotoById(request):
 	if request.method == "GET":
 		photo = Photo.objects.get(pk=request.GET['id'])
-		return render_to_response(request.GET['view'], {'data': photo} , context_instance=RequestContext(request) )
+		return render_to_response(request.GET['view'], {'data': photo} , context_instance=Context(request) )
 	else:
 		result = MessageVO(_type=False, msg=MessageCode._001)
 		return HttpResponse(result.getJSON(), mimetype='application/json')

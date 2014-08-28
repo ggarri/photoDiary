@@ -1,8 +1,7 @@
 from django.shortcuts import get_object_or_404, render_to_response
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
-from django.template import RequestContext
-from django.middleware.csrf import CsrfResponseMiddleware
+from django.template import Context
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core import serializers
@@ -24,7 +23,7 @@ from Photos.models import *
 # @login_required
 @csrf_exempt
 def start(request, view):
-	return render_to_response(view, {} , context_instance=RequestContext(request) )
+	return render_to_response(view, {} , context_instance=Context(request) )
 
 def getCoordinates(request):
 	user = User.objects.get(pk=request.session['logged']['id'])
@@ -35,7 +34,7 @@ def getCoordinateById(request):
 	if request.method == "GET":
 		user = User.objects.get(pk=request.session['logged']['id'])
 		coor_info = Coordinate.objects.filter(owner=user).get(pk=request.GET['id'])
-		return render_to_response(request.GET['view'], {'data': coor_info} , context_instance=RequestContext(request) )
+		return render_to_response(request.GET['view'], {'data': coor_info} , context_instance=Context(request) )
 	else:
 		result = MessageVO(_type=True, msg=MessageCode._001)
 		return HttpResponse(result.getJSON(), mimetype='application/json')
@@ -131,7 +130,7 @@ def getCoordinatePhotos(request):
 		user = User.objects.get(pk=request.session['logged']['id'])
 		coor = Coordinate.objects.filter(owner=user).get(pk=request.GET['coordinateId'])
 		if 'view' in request.GET: # Using a view to render them
-			return render_to_response(request.GET['view'], {'Photos' : coor.photos.all()}, context_instance=RequestContext(request) )
+			return render_to_response(request.GET['view'], {'Photos' : coor.photos.all()}, context_instance=Context(request) )
 		else: # Return them to be rendered in the view
 			data = [ p for p in coor.photos.values('id')]
 			return HttpResponse(simplejson.dumps(data), mimetype='application/json')
