@@ -1,0 +1,8 @@
+{% if Photos %}
+	{% for photo in Photos %}
+		<section class='tumbPhoto' id='{{photo.pk}}' coordinateId='{{photo.coordinate.pk}}'>
+			<canvas class='photo' style="background:url('{{MEDIA_URL}}{{photo.img}}');" width="{{photo.width}}" height="{{photo.height}}" />
+			<canvas class='bin' />
+		</section>
+	{% endfor %}
+{% endif %}

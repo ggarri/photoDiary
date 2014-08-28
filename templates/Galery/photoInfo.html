@@ -1,0 +1,9 @@
+{% if data %}
+<input type='hidden' class='id' value='{{data.id}}' />
+<legend class='title' contentEditable="true">{{data.title}}</legend><button class='btn btn-primary save'>Save</button>
+<section class='date'><input class='date' value='{{data.date}}' /></section>
+<section class='tumbPhoto'>
+	<img class='photo' src="/media/{{data.img}}" width="{{data.width}}" height="{{data.height}}"/>
+</section>
+<textarea class='comment'>{{data.comment}}</textarea>
+{% endif %}

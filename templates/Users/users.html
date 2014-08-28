@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block center_resources %}
+	<script type="text/javascript" src="{{MEDIA_URL}}Users/js/users.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}Users/css/users.css" />
+{%endblock%}
+
+{% block content %}
+<section class='register_form'>
+	<fieldset>
+		<legend>Registers new user</legend>
+		<section class='fields'></section>
+	</fieldset>
+	<button class='register btn'>Register</button>
+	<button class='clear btn'>Clear</button>
+</section>
+
+<section class='login_form' class='form'>
+	<label for="nick">Nick: </label>
+	<input type='text' name='nick'/>
+	<label for="password">Pass: </label>
+	<input type='password' name='password'/>
+	<button type='submit' class='btn btn-primary'>Login</button>
+</section>
+{%endblock%}
+
+
+{% block center_container_bottom %}
+
+{%endblock%}

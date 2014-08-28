@@ -1,0 +1,1348 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"paddig",
+				"padding-top"
+			],
+			[
+				"ge",
+				"geoLocation"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"mar",
+				"main-area"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"mark",
+				"Marker"
+			],
+			[
+				"reu",
+				"result"
+			],
+			[
+				"get",
+				"getJSON"
+			],
+			[
+				"f",
+				"file"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"co",
+				"context"
+			],
+			[
+				"Mes",
+				"MessageCode"
+			],
+			[
+				"conte",
+				"content"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"mess",
+				"messageGlobal"
+			],
+			[
+				"fie",
+				"fields"
+			],
+			[
+				"Phot",
+				"photoDiary"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"mes",
+				"messages"
+			],
+			[
+				"in",
+				"inPhotos"
+			],
+			[
+				"p",
+				"photo"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"ma",
+				"max_height"
+			],
+			[
+				"max",
+				"max_width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"new_",
+				"new_width"
+			],
+			[
+				"of",
+				"offsett"
+			],
+			[
+				"ar",
+				"array_merge"
+			],
+			[
+				"new",
+				"new_width"
+			],
+			[
+				"up",
+				"updateGalery"
+			],
+			[
+				"has",
+				"hasBin"
+			],
+			[
+				"ser",
+				"service"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"dro",
+				"droppable"
+			],
+			[
+				"click",
+				"clickEvent"
+			],
+			[
+				"del",
+				"serviceDel"
+			],
+			[
+				"tr",
+				"trigger"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"key",
+				"keyup"
+			],
+			[
+				"for",
+				"formset"
+			],
+			[
+				"a",
+				"args"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"fr",
+				"friend"
+			],
+			[
+				"frind",
+				"friends"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"requ",
+				"requestId"
+			],
+			[
+				"rqe",
+				"request"
+			],
+			[
+				"ad",
+				"addFriend"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"Model",
+				"ModelForm"
+			],
+			[
+				"clic",
+				"clickEvent"
+			],
+			[
+				"da",
+				"dragend"
+			],
+			[
+				"marker",
+				"markerClick"
+			],
+			[
+				"ol",
+				"old_width"
+			],
+			[
+				"old_",
+				"old_width"
+			],
+			[
+				"old",
+				"old_height"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"res",
+				"resizedImage"
+			],
+			[
+				"fo",
+				"focusout"
+			],
+			[
+				"cl",
+				"markerClick"
+			],
+			[
+				"_m",
+				"_markersArray"
+			],
+			[
+				"fi",
+				"fileName"
+			],
+			[
+				"image",
+				"imagefile"
+			],
+			[
+				"d",
+				"draggable"
+			],
+			[
+				"http",
+				"HttpResponse"
+			],
+			[
+				"appen",
+				"appendTo"
+			],
+			[
+				"widget",
+				"widget"
+			],
+			[
+				"c",
+				"callback"
+			],
+			[
+				"app",
+				"appendTo"
+			],
+			[
+				"de",
+				"delMarker"
+			],
+			[
+				"r",
+				"request"
+			],
+			[
+				"set",
+				"setLatLngInfo"
+			],
+			[
+				"contex",
+				"contextGalery"
+			],
+			[
+				"g",
+				"galery"
+			],
+			[
+				"sec",
+				"sectionDisplay"
+			],
+			[
+				"se",
+				"sectionButtons"
+			],
+			[
+				"sect",
+				"sectionUploader"
+			],
+			[
+				"pro",
+				"progressBar"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"to",
+				"toggle"
+			],
+			[
+				"tmp",
+				"tmpPhoto"
+			],
+			[
+				"si",
+				"size_dest"
+			],
+			[
+				"size",
+				"size_orig"
+			],
+			[
+				"map",
+				"mapClick"
+			],
+			[
+				"Values",
+				"valuesList"
+			],
+			[
+				"values",
+				"valuesList"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"time",
+				"timeLine"
+			],
+			[
+				"show",
+				"showCoordinate"
+			],
+			[
+				"cre",
+				"createFirstPolyLine"
+			],
+			[
+				"an",
+				"animationMakers"
+			],
+			[
+				"markes",
+				"markersArray"
+			],
+			[
+				"add",
+				"addingMarkers"
+			],
+			[
+				"my",
+				"myLatlng"
+			],
+			[
+				"la",
+				"LatLng"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"opti",
+				"options"
+			],
+			[
+				"op",
+				"options"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/Map/map.html",
+			"settings":
+			{
+				"buffer_size": 924,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/Map/css/map.css",
+			"settings":
+			{
+				"buffer_size": 3978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/common/js/widget/maps.js",
+			"settings":
+			{
+				"buffer_size": 6431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/common/js/widget/galery.js",
+			"settings":
+			{
+				"buffer_size": 8326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Photos/urls.py",
+			"settings":
+			{
+				"buffer_size": 688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/Map/js/map.js",
+			"settings":
+			{
+				"buffer_size": 3279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/common/js/controller/http_request.js",
+			"settings":
+			{
+				"buffer_size": 1332,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Photos/views.py",
+			"settings":
+			{
+				"buffer_size": 3856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "common/UploadProgressHandler.py",
+			"settings":
+			{
+				"buffer_size": 1810,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 6016,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/common/css/main.css",
+			"settings":
+			{
+				"buffer_size": 3425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 5113,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "media/common/js/libs/jquery/jquery.binaryUpload.js",
+			"settings":
+			{
+				"buffer_size": 2586,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ggarri/Developing/myapps/PhotoDiary/urls.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/common/UploadProgressCachedHandler.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Photos/urls.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Photos/uploadProgress.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Map/views.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/common/galery.html",
+		"/home/ggarri/Developing/new-trivago/trivago.html",
+		"/home/ggarri/Developing/new-trivago/index.php",
+		"/home/ggarri/Developing/new-trivago/css/html.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Galery/css/galery.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/settings.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Users/views.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Map/map.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/index.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Map/js/map.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/galery.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/photos.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Map/css/map.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/controller/http_request.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/controller/services.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/maps.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/MyPeople/urls.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Map/markerInfo.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Galery/photoInfo.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Galery/galery.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Photos/messages.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Map/messages.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Photos/views.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Galery/js/galery.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Photos/models.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Galery/js/main.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Map/urls.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/messages.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/middleware/myOwnOnes.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Users/messages.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/MyPeople/js/main.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/autocomplete.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Map/models.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Map/js/main.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Map/main.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Users/main.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/helpers.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/common/messages.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Users/css/users.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Users/register.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Users/js/users.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/messages.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/booter.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Users/js/users.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Users/urls.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/uploader.js",
+		"/home/ggarri/TID/neositid/www-guser-sp3/components/register/register/personal_data.js",
+		"/home/ggarri/TID/neositid/www-guser-sp3/components/register/view/personal_data.html",
+		"/home/ggarri/TID/neositid/www-guser-sp3/components/register/register/academic_data.js",
+		"/home/ggarri/TID/neositid/www-guser-sp3/components/register/register/residence.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/settings2.py.bck",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Galery/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Galery/main.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Map/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Users/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Users/models.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Users/js/main.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/Map/js/helper.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Map/galery.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Users/errors.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/MyPeople/requests.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/MyPeople/friends.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/MyPeople/main.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/MyPeople/views.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Galery/photo_form.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/MyPeople/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Users/form.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/middleware/myOwnOne.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/middleware/__init__.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/middleware",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/User/main.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/Map/marker_form.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/User/form.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/User/js/main.js",
+		"/home/ggarri/Developing/myapps/wikichef/MagicController/views.py",
+		"/home/ggarri/Developing/myapps/wikichef/templates/recipes/addRecipe.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/User/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/common/js/widget/forms.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/galery.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/photos.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Photos/admin.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/autocomplete.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/maps.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/main.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/uploader.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/controller/services.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/controller/http_request.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/css/main.css",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/booter.js",
+		"/home/ggarri/TID/neositid/frontend/js/common/bootstrap.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Album/models.py",
+		"/home/ggarri/TID/neositid/frontend/js/common/services.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Album/views.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/Album/urls.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/JSON/models.py",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/forms.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/marker_form.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/galery.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/map_frame.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/helper.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/templates/tmp_galery.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/html5_uploader.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/js/widget/renderer.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/media/middleware/django-crossdomainxhr-middleware.py",
+		"/home/ggarri/TID/neositid/www-stock/components/main/index.html",
+		"/home/ggarri/Developing/myapps/PhotoDiary/manage.py",
+		"/home/ggarri/TID/neositid/www-bi/components/main/js/controller/helper/http_request.js",
+		"/home/ggarri/Developing/myapps/wikichef/settings.py",
+		"/home/ggarri/TID/neositid/www-bi/js/common/bootstrap.js",
+		"/home/ggarri/Developing/myapps/PhotoDiary/js/main.js",
+		"/home/ggarri/Developing/myapps/Final Project/wikichef/settings.py",
+		"/home/ggarri/Developing/myapps/panoramio/main.js",
+		"/home/ggarri/Developing/myapps/panoramio/index.html",
+		"/home/ggarri/Developing/myapps/panoramio/layer-panoramio.html",
+		"/home/ggarri/Developing/myapps/mapStart/main.js",
+		"/home/ggarri/Developing/myapps/panoramioLibrary/index.html",
+		"/home/ggarri/Developing/myapps/panoramioLibrary/main.js",
+		"/home/ggarri/Developing/myapps/sanValentine/index.html",
+		"/home/ggarri/Developing/myapps/sanValentine/main.css",
+		"/home/ggarri/Developing/myapps/sanValentine/main.js",
+		"/home/ggarri/Developing/myapps/sanValentine/mensajes.js",
+		"/home/ggarri/Developing/myapps/sanValentine/coordinates.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/ggarri/Developing/myapps/PhotoDiary",
+			"<open files>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"submit",
+			"serviceAdd",
+			"infowindow",
+			"InfoWindow",
+			"infowindow",
+			"unselectMarker",
+			"contextGalery",
+			"delMarker",
+			"height",
+			"hei",
+			"height",
+			"map",
+			"drop-area",
+			".marker-galery",
+			"drop",
+			"_sections",
+			"drop-area",
+			"ss=\"drop-area",
+			"drop",
+			"mapParams",
+			"center",
+			"popover",
+			"debug",
+			"login",
+			"drop",
+			"serviceAdd",
+			"params_callbac",
+			"widget.infowindow",
+			"markerClick",
+			"markerDragend",
+			"markerClick",
+			"au",
+			"auto",
+			"a",
+			"getCoo",
+			"getPho",
+			"setCoo",
+			"project",
+			"project_dir",
+			"messages('display'",
+			"getCoordinateBy",
+			"http",
+			"setCo",
+			"del",
+			"http_",
+			"http",
+			"context",
+			"uploader_form",
+			"Photos.views.",
+			"photoDi",
+			"PhotoDiary",
+			"serviceGet",
+			"http_request2",
+			"/PhotoDiary",
+			"main-menu",
+			"contex",
+			"conte",
+			"con",
+			"26",
+			"#signIn ",
+			"sign_form",
+			"attr",
+			"change",
+			"loadImage",
+			"p",
+			"upload",
+			"ke",
+			"key",
+			"xhr",
+			"url",
+			"100%",
+			"get",
+			"getB",
+			"bound",
+			"serviceAdd",
+			"addTm",
+			"serviceAdd",
+			"ser",
+			"dis",
+			"di",
+			"display",
+			"title",
+			"le",
+			"legen",
+			"click",
+			"clickPhoto",
+			"consol",
+			"consoe",
+			"serviceGe",
+			"galery.htm",
+			"tumbPhoto",
+			"canvas",
+			"tumb",
+			"console",
+			"updateGalery",
+			"allowGalery",
+			"allowDrop",
+			"allowGalery",
+			"serviceGet",
+			"serviceAdd",
+			"serviceDel",
+			"updateModes",
+			"accept",
+			".ui-galery",
+			"../../resources",
+			"../resources",
+			".ui-galery",
+			"'False'",
+			"'True'",
+			"'result'",
+			"UserError",
+			"templates",
+			"]\n",
+			"composeData",
+			"messages",
+			"tmpPhoto.create",
+			"re",
+			"redirect",
+			"selfAutocomplete",
+			"a",
+			"autoc",
+			"serial",
+			"callbac",
+			"blue",
+			"navbar-inner",
+			"outcome",
+			"user",
+			"middle"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"messages('show'",
+			"",
+			"http_request",
+			"",
+			"register_form",
+			"photo",
+			"droppableArea",
+			"allowDrop",
+			"insertItemModes",
+			".tmp-galery",
+			".tmp-galery .ui-galery",
+			"../../common/resources",
+			"../../resources",
+			".tmp-galery .ui-galery",
+			"False",
+			"True",
+			"'type'",
+			"MyError",
+			"",
+			"signin",
+			"addMarker",
+			"map",
+			"icons",
+			"markersArray",
+			"{{MEDIA_URL}}common/css",
+			"{{MEDIA_URL}}common/js",
+			"height",
+			"width",
+			"height",
+			"myMap",
+			"Map",
+			"updateGalery",
+			"",
+			"data",
+			"market.fields.",
+			"market.fields",
+			"lng",
+			"lat",
+			"toggle",
+			"section",
+			"obj",
+			"TEMPLATE_DIR",
+			"TEMPLATE_ROOT",
+			"section",
+			"../images/",
+			"Francia",
+			"Suecia",
+			"Marruecos",
+			"Estocolmo",
+			"Estonia",
+			"Berlin",
+			"Portugal",
+			"Londres",
+			"Eslovaquia",
+			"Austria",
+			"Irlanda",
+			"Corazon",
+			"Oslo",
+			"addingZoomPolygon",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/Map/map.html",
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								764,
+								764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "media/Map/css/map.css",
+					"settings":
+					{
+						"buffer_size": 3978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								638,
+								638
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 734.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "media/common/js/widget/maps.js",
+					"settings":
+					{
+						"buffer_size": 6431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1602,
+								1602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "media/common/js/widget/galery.js",
+					"settings":
+					{
+						"buffer_size": 8326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2277,
+								2277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 643.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Photos/urls.py",
+					"settings":
+					{
+						"buffer_size": 688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								605,
+								605
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "media/Map/js/map.js",
+					"settings":
+					{
+						"buffer_size": 3279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3200,
+								3200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 916.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "media/common/js/controller/http_request.js",
+					"settings":
+					{
+						"buffer_size": 1332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Photos/views.py",
+					"settings":
+					{
+						"buffer_size": 3856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1764,
+								1764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 266.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "common/UploadProgressHandler.py",
+					"settings":
+					{
+						"buffer_size": 1810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "settings.py",
+					"settings":
+					{
+						"buffer_size": 6016,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4571,
+								4571
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1248.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "media/common/css/main.css",
+					"settings":
+					{
+						"buffer_size": 3425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1438,
+								1438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1192.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "templates/index.html",
+					"settings":
+					{
+						"buffer_size": 5113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1128,
+								1128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "media/common/js/libs/jquery/jquery.binaryUpload.js",
+					"settings":
+					{
+						"buffer_size": 2586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2586,
+								2586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 448.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 148.0,
+	"status_bar_visible": true
+}

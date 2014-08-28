@@ -1,0 +1,19 @@
+{% if data%}
+<section class='marker-info'>
+	<input type='hidden' class='id' value='{{data.pk}}'/>
+	<!-- <button class="info-btn" rel="popover" data-content="Includes your photos within marker through dragging from temporal gallery to its drop area. It might take them back to temporal gallery after." data-original-title="About marker"></button>  -->
+	<legend class='title' contentEditable="true">{{data.title}}</legend>
+	<section class='info'>
+		<section class='row'><b>Coordinates:</b> ({{data.lat}},{{data.lng}}) </section>
+		{% if data.location %}
+			<section class='row'><b>Address:</b> {{data.location.address}} </section>
+			<section class='row'><b>City:</b> {{data.location.city}} </section>
+			<section class='row'><b>CP:</b> {{data.location.cp}} </section>
+			<section class='row'><b>Country:</b> {{data.location.country}} </section>
+		{%endif%}
+	</section>
+	<section class='buttons'>
+		<button class='del btn btn-primary'>Delete</button>
+	</section>
+</section>
+{%endif%}

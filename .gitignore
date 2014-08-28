@@ -1,0 +1,4 @@
+media/uploaded/tmp/*
+media/uploaded/photos/*
+settings.py
+*.pyc

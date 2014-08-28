@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block center_resources %}
+	<script type="text/javascript" src="{{MEDIA_URL}}Galery/js/galery.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}Galery/css/galery.css" />
+{%endblock%}
+
+{% block content %}
+<section class='center_block'>
+	<section class='searcher'>
+		<label> Search </label>
+		<input type='text' class='search' name='search' placeholder="Madrid"/>
+	</section>
+	<section id='map_canvas' class='map_canvas'></section>
+</section>
+
+<section class='left_block'>
+	<section class='photo-info'></section>
+</section>
+
+<section class='bottom_block'>
+	<button class="info-btn" rel="popover" data-content="Gallery of photos which refer to current markers in the map" data-original-title="Map gallery"></button> 
+	<section class='map-galery'></section>
+</section>
+
+
+
+{%endblock%}
+

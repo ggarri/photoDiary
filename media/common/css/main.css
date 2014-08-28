@@ -1,0 +1,222 @@
+.uploader_form, .uploader_frame{
+	display: none;
+}
+
+.row{
+	width: 100%;
+	display: block;
+	margin-left: 10px;
+}
+
+.navbar-fixed-bottom {
+	margin-bottom: 0px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 1030;
+}
+
+#main-area {
+	/*position : relative;
+	width: 100%;*/
+	/*margin: 20px auto 50px auto;*/
+	display: block;
+	padding-top: 20px;
+}
+
+#main-area .container{
+	width: 100%;
+	/*height: 100%;*/
+	/*padding: 30px 20px 30px 20px;*/
+}
+
+#main-area .container > *{
+	float: left;
+	display: inline-block;
+}
+
+.row{
+	width: 100%;
+	display: block;
+}
+
+.navbar-inner{
+	width: 100%;
+	display: block;
+	height: 30px;
+}
+
+
+.navbar-inner > *{
+	display: inline-block;
+}
+
+.navbar-inner .main-menu{
+	float: left;
+}
+
+.navbar-inner .loggedUser span{
+	color: white;
+	float: right;
+}
+
+.navbar-inner ul li{
+	display: inline-block;
+	padding: 0px 5px 0px 5px;
+}
+
+.navbar-fixed-bottom .navbar-inner{
+	color: rgba(240,240,240, 0.8);
+	text-align: center;
+	font-weight: bold;
+}
+
+input.warning{
+	box-shadow: 0px 1px 1px 1px rgba(240, 0, 0, .3), 1px -1px 1px 1px rgba(240, 0, 0, 0.2);
+}
+
+span.warning{
+	color: rgba(240, 0, 0, .8);
+}
+
+.info-btn{
+	width: 23px;
+	height: 23px;
+	background: url('../../common/resources/info-icon.png');
+	border: none;
+	display: inline-block;
+	z-index: 100;
+	background-size: 100% 100%;
+}
+
+
+
+/*****************************
+	MAP
+*****************************/
+
+#map_canvas{
+	/*display: block;*/
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 98%;
+	height: 440px;
+	
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1.4px solid #D9D9D9;
+	border-color: rgba(102, 102, 102, 0.25);
+	background: #E5E3DF;
+	overflow: hidden;
+}
+
+/**** IMPORTANT CSS ATRIBUTTES TO FIX PROBLEM WITH BOOTSTRAP ****/
+
+#map_canvas img { 
+  max-width: none;
+}
+
+#map_canvas label { 
+  width: auto; display:inline; 
+}
+
+/*********************************
+	TOP BAR
+*********************************/
+
+
+#menu-bar-top .loggedUser{
+	float: right;
+	width: auto;
+}
+
+#menu-bar-top .navbar-inner{
+	padding: 3px 10px 0px 10px;
+}
+
+#menu-bar-top .navbar-inner > *{
+	margin-top:5px;
+}
+#menu-bar-top .navbar-inner .caret{
+	border-top-color: #FFFFFF;
+}
+
+#menu-bar-top li.active a{
+	color: white !important;
+	cursor: default;
+	text-decoration: underline;
+}
+
+#menu-bar-top li:hover a{
+	color: white;
+	text-decoration: none;
+}
+
+#menu-bar-top ul.dropdown-menu li{
+	width: 150px;
+}
+
+#menu-bar-top ul.dropdown-menu li a{
+	width: 120px;	
+}
+
+#menu-bar-top ul.dropdown-menu li[disabled=disabled] a{
+	color: #111111 !important;
+    cursor: default !important;
+}
+
+#menu-bar-top ul.dropdown-menu li[disabled=disabled] a:hover{
+	background-color: gray;
+}
+
+#menu-bar-top .logging{
+	float: right;
+	width: auto;
+	margin-left:3px;
+	margin-right:10px;
+}
+
+
+/*********************************
+	MESSAGES
+*********************************/
+
+#messages{
+	display: none;
+	position: absolute;
+	border-color: #F0C36D;
+	background-color: #F9EDBE;
+	top: 40px;
+	left: 400px;
+	border-radius: 0.6em;
+	border: 1.8px;
+	width: 424px;
+	min-height: 15px;
+	z-index: 2;
+	padding: 10px 10px 10px 10px;
+}
+
+#messages div{
+	text-align: center;
+}
+
+#messages div.error{
+	color: rgba(240, 0, 0, .8);
+	text-shadow: 0.7px 0.8px rgba(240, 0, 0, 1);
+}
+
+#messages div.success{
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 0.7px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+
+/*********************************
+	CONTENTS
+*********************************/
+
+#main-area > .box{
+	display: +flex;
+  +justify-content: ;
+  +align-items: ;
+}

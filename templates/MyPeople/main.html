@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block center_resources %}
+	<script type="text/javascript" src="{{MEDIA_URL}}MyPeople/js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}Users/css/main.css" />
+{%endblock%}
+
+{% block center_container %}
+<div class='span6'>
+	<label> Users: </label>
+	<input type='text' class="userName"/>
+	<input type='hidden' class="userId"/>
+	<button class='add'>Add</button>
+</div>
+<div class='span3'>
+	FRIENDS
+	<div class='friends'>
+	</div>
+</div>
+<div class='span3'>
+	REQUEST
+	<div class='requests'>
+	</div>
+</div>
+{%endblock%}
+
+
+{% block center_container_bottom %}
+
+{%endblock%}

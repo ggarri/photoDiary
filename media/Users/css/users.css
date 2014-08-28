@@ -1,0 +1,76 @@
+.login_form, .register_form{
+	display: inline-block;
+	
+}
+
+/*********************************
+	LOGGING
+*********************************/
+
+.login_form{
+	float: right;
+	background-color: rgba(0, 0, 0, 0.05);
+	background-clip: padding-box;
+	box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1),inset 0 -1px 0 rgba(0, 0, 0, .07);
+	border-radius: 5px;
+	border-width: 0.7;
+	border-color: rgba(0, 0, 0, .9);
+	width: 240px;
+	padding: 15px 30px 20px 30px;
+	margin-right: 50px;
+	margin-top: 40px;
+}
+
+.login_form label, .login_form input{
+	display: block;
+	width: 100%;
+	
+}
+
+.login_form label{
+	font-weight: bold;
+}
+
+.login_form input{
+	height: 27px;
+}
+
+.login_form button{
+	float: right;
+	margin-top: 15px;
+	padding: 6px 20px 6px;
+}
+
+/*********************************
+	SIGN IN
+*********************************/
+
+.register_form{
+	float: left;
+	border-radius: 5px;
+	width: 600px;
+	padding: 20px 20px 10px 20px;
+	margin-left: 30px;
+}
+
+.register_form label, .register_form input{
+	display: inline-block;
+}
+
+.register_form label{
+	width: 80px;
+}
+
+.register_form input {
+	width: 160px;
+	height: 25px;
+}
+
+.register_form button{
+	margin: 15px 10px 0px 0px;
+	padding: 6px 20px 6px;
+}
+
+.register_form .fields .row > *{
+	float: left !important;
+}

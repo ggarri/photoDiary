@@ -1,0 +1,5 @@
+<ul>
+{% for friend in friends %}
+	<li id='{{friend.pk}}'>{{friend.nick}}<button class='delete'>X</button></li>
+{% endfor %}
+</ul>

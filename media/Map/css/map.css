@@ -1,0 +1,250 @@
+#main-area .content{
+	width: 100%;
+	/*height: 100%;
+	padding: 30px 20px 30px 20px;*/
+}
+
+#main-area .right-content{
+	width: 100px;
+	position: absolute;
+}
+
+/*****************************
+	SEARCHER
+*****************************/
+
+
+
+.searcher{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	margin-left: 15px;
+}
+
+.searcher label{
+	width: 100px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.searcher input {
+	width: 500px;
+	display: inline-block;
+	height: 25px;
+}
+
+
+
+/*****************************
+	MAP
+*****************************/
+
+#map_canvas{
+	/*display: block;*/
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	width: 98%;
+	height: 80%;
+	
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1.4px solid #D9D9D9;
+	border-color: rgba(102, 102, 102, 0.25);
+	background: #E5E3DF;
+	overflow: hidden;
+}
+
+/**** IMPORTANT CSS ATRIBUTTES TO FIX PROBLEM WITH BOOTSTRAP ****/
+
+#map_canvas img { 
+  max-width: none;
+}
+
+#map_canvas label { 
+  width: auto; display:inline; 
+}
+
+
+
+/*****************************
+	TEMPORAL GALERY
+*****************************/
+
+
+.tmp-galery{
+	z-index: 900;
+	margin-bottom: 35px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+
+.tmp-galery .uploader{
+	width: 100px;
+	/*height: 140px;*/
+	display: inline;
+	float: left;
+	/*position: relative;*/
+}
+
+.tmp-galery .display{
+	width: 85%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.1);
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.tmp-galery .uploader .file-icon, .tmp-galery .uploader .drop-area{	
+	/*margin-top: -30px !important;*/
+	background-size: 100% 100% !important;
+	cursor: pointer;
+	/*margin-bottom: 20px;*/
+	width: 90px;
+	height: 90px;
+}
+
+.tmp-galery .uploader .file-icon{
+	background: url('../../common/resources/upload-icon.png');
+}
+
+.tmp-galery .uploader .drop-area{
+	display: none;
+	background: url('../../common/resources/drop_tmp.png');
+}
+
+.tmp-galery .uploader #upload_field{
+	visibility:hidden;
+	width: 0px;
+}
+
+.tmp-galery .display .ui-photo{
+	background-size: 100% 100% !important;
+	margin-bottom: 5px;
+	width: 90px;
+	height: 90px;
+}
+
+.tmp-galery .display .bin{
+	width: 25px;
+	height: 25px;
+}
+
+
+
+/*****************************
+	MARKER INFORMATION
+*****************************/
+
+.marker-info{
+	width: 400px;
+	display: inline-block;
+}
+
+.marker-info .title{
+	display: inline-block;
+	width: 95%;
+	margin-bottom: 7px;
+}
+
+.marker-info .info{
+	display: inline-block;
+	width: 95%;	
+}
+
+.marker-info .buttons{
+	display: inline-block;
+	width: 95%;
+	text-align: right;
+}
+
+.marker-info *[contenteditable='true']:hover{
+	background: #FFFF66;
+	cursor: pointer;
+}
+
+.marker-galery{
+	/*width: 92%;
+	height: 50px;
+	display: inline-block;
+	float: right;	*/
+	height: 70%;
+	width: 90px;
+	z-index: 900;
+	margin-bottom: 35px;
+	position: fixed;
+	right: 0;
+	top: 120px;
+}
+
+.marker-galery .uploader{
+	width: 20%;
+	height: 140px;
+	float: right;
+	display: inline-block;
+}
+
+.marker-galery .uploader .drop-area{		
+	display: inline-block;	
+	background-size: 100% 100% !important;
+	cursor: pointer;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 100px;
+	background: url('../../common/resources/drop_marker.png');
+}
+
+.marker-galery .display{
+	display: inline-block;	
+	width: 98%;
+	height: 100%;
+	float: left;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.marker-galery .display .ui-photo{
+	margin-bottom: 5px;
+	display: inline-block;
+	width: 50px;
+	height: 55px;
+}
+
+.marker-galery .display .bin{
+	width: 25px;
+	height: 25px;
+}
+
+
+
+/*****************************
+	GENERIC GALERY
+*****************************/
+
+.ui-galery .ui-photo{
+	float: left;
+	cursor: pointer;
+	margin: 5px 5px 5px 5px;
+}
+
+.ui-galery .ui-photo .photo{
+	display: block;
+	background-size: 100% 100% !important;
+}
+
+.ui-galery .ui-photo .bin{
+	display: none;
+	position: relative;
+	background: url('../../common/resources/del-icon.png');
+	background-size: 100% 100% !important;
+	z-index: 100;
+}
+
+.ui-galery .ui-photo:hover .bin{
+	display: block;
+}

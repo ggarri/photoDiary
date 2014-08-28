@@ -1,0 +1,5 @@
+<ul>
+{% for request in requests %}
+	<li id='{{request.pk}}'>{{request.user.nick}}<button class='accept'>V</button><button class='reject'>X</button></li>
+{% endfor %}
+</ul>

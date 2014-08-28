@@ -1,0 +1,1 @@
+rsync -azvr --progress --exclude 'settings.py' --exclude 'media/uploaded/photos' --exclude 'media/uploaded/tmp' ./ root@178.79.179.17:/srv/http/PhotoDiary/

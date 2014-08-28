@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block center_resources %}
+	<script type="text/javascript" src="{{MEDIA_URL}}Map/js/map.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}Map/css/map.css" />
+{%endblock%}
+
+{% block content %}
+<section class='row'> 
+	<section class='searcher'>
+		<button class="info-btn" rel="popover" data-content="Click on below map to add your places. If one of them is in a incorrect location, drag it to the correct position. Use following box to make your searching easier" data-original-title="About map"></button> 
+		<label> Search </label>
+		<input type='text' class='search' name='search' placeholder="Madrid"/>
+	</section>
+	<section id='map_canvas' class='map_canvas'></section>
+	<section class='tmp-galery'></section>
+</section>
+{%endblock%}
+
+{% block right_content %}
+<section class='marker-galery'></section>
+{%endblock%}
+
+
+
+{% block center_container_bottom %}
+
+{%endblock%}

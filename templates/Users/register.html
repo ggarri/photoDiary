@@ -1,0 +1,5 @@
+{% for field in form.visible_fields %}
+	<section class='row'>
+		{{ field.label_tag }} {{ field }} <span class='warning span4'></span>
+	</section>
+{% endfor %}
