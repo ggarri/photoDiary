@@ -11,7 +11,13 @@ Requirements
 
 **Django 1.6.2**
 
+Libraries
+===========
+
+**simplejson**
+
+$ pip install simplejson
+
 **PIL**
 
-Installed by pip:
 $ pip install git+git://github.com/python-imaging/Pillow.git
