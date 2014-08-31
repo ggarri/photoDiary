@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta http-equiv="pragma" content="no-cache" />
+
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBGItI_nRsdBjOgQahqN_9U7I_NDKXVDUU&sensor=true">
+        </script>
+
+        {% load staticfiles %}
+
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/jquery/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/jquery/jquery.json-2.2.min.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/jquery/jquery-ui-autocomplete.custom.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/jquery/jquery.loading.1.6.4.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/jquery/jquery.binaryUpload.js"></script>
+    
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/phpjs/php.js.pack.js"></script>
+    
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/twitter-bootstrap/bootstrap-tooltip.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/twitter-bootstrap/bootstrap-modal.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/twitter-bootstrap/bootstrap-popover.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/twitter-bootstrap/bootstrap-tab.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/twitter-bootstrap/bootstrap-dropdown.js"></script>
+        <script type="text/javascript" language="JavaScript" src="FrontEnd/media/js/libs/twitter-bootstrap/bootstrap-button.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="FrontEnd/media/css/bootstrap/css/bootstrap.css" />-->
+        <link rel="stylesheet" type="text/css" href="FrontEnd/media/css/tid-theme/jquery-ui-1.8.12.custom.css" />
+        <link rel="stylesheet" type="text/css" href="FrontEnd/media/css/main.css" />
+    
+    
+        <!-- <script type="text/javascript" src="FrontEnd/media/js/widget/renderer.js"></script> -->
+        <script type="text/javascript" src="FrontEnd/media/js/widget/uploader.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/widget/maps.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/widget/photos.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/widget/galery.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/widget/autocomplete.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/widget/messages.js"></script>
+    
+        <script type="text/javascript" src="FrontEnd/media/js/controller/services.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/controller/http_request.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/booter.js"></script>
+        <script type="text/javascript" src="FrontEnd/media/js/helpers.js"></script>
+    
+        {% block center_resources %}{%endblock%}
+            
+        <title>PhotoDiary</title>
+	</head>
+
+	<body>
+		<aside id="messages"></aside>	
+		<header id="menu-bar-top" class="navbar navbar-fixed-top">
+			<nav class="navbar-inner">
+				<ul class='main-menu'>
+					<li class='myMap'><a href='/map'>My Map</a></li>
+					<li class='myGalery'><a href='/photos'>Galery</a></li>
+					<li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			            	My People
+			            	<b class="caret"></b>
+			        	</a>
+			        	<ul class="dropdown-menu">
+			        		<li disabled='disabled'><a href="#">Friends</a></li>
+			        		<li disabled='disabled'><a href="#">Gossip</a></li>
+			        	</ul>
+			        </li>
+				</ul>
+
+				<ul class='main-menu logging'>
+					{% if request.session.logged %}
+					<li><a href='/logout'>(Logout)</a></li>
+					{% else %}
+					<li class='signIn'><a href='/'>Sign in</a></li>
+					{% endif %}
+				</ul>
+
+				{% if request.session.logged %}
+				<aside class='loggedUser'>
+					<span> Logged: <b> {{request.session.logged.nick}} </b></span>
+				</aside>
+				{% endif %}
+			</nav>
+		</header>
+
+		<section id="main-area">
+			<section class='container'>
+				<aside class="left-content box">
+					{% block left_content %}{%endblock%}
+				</aside>
+				<article class="content box">
+					{% block content %}{%endblock%}
+				</article>
+				<aside class="right-content box">
+					{% block right_content %}{%endblock%}
+				</aside>
+			</section>
+
+		</section>
+
+		<footer id="menu-bar-bottom" class="navbar navbar-fixed-bottom">
+		    <nav class="navbar-inner">&#169; 2012 PhotoDiary by Gabriel Garrido Calvo.</nav>
+		</footer>
+	</body>
+
+</html>
+
+

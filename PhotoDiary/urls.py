@@ -14,9 +14,9 @@ handler404 = 'Users.views.handler404'
 # Format (regular expression, Python callback function [, optional dictionary [, optional name]])
 urlpatterns = patterns('Users.views',
 
-    url(r'^$', 'start', {'view':'Users/users.html'}),
+    url(r'^$', 'start', {'view':'users.html'}),
     url(r'^setNewUser$', 'setNewUser'),
-    url(r'^getRegisterForm$', 'getRegisterForm', {'view':'Users/register.html'}),
+    url(r'^getRegisterForm$', 'getRegisterForm', {'view':'view/register.html'}),
     url(r'^login$', 'login'),
     url(r'^logout$', 'logout'),
 
@@ -26,6 +26,4 @@ urlpatterns = patterns('Users.views',
 
 #    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 #    url(r'^admin/', include(admin.site.urls)),
-
-    
-) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # Define media components
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
