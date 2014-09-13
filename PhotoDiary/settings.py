@@ -56,12 +56,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 REPO_ROOT = "/tmp/"
-MEDIA_ROOT = os.path.join(BASE_DIR, 'FrontEnd/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'Public/media/')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = '/static/'
-MEDIA_URL = '/FrontEnd/media/'
+MEDIA_URL = '/Public/media/'
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
@@ -104,7 +104,7 @@ ROOT_URLCONF = 'PhotoDiary.urls'
 
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, "FrontEnd/view")
+    os.path.join(BASE_DIR, "Public/view")
 )
 
 
