@@ -1,6 +1,7 @@
 from django.core.files.uploadhandler import FileUploadHandler
 from django.core.cache import cache
 
+
 class UploadProgressHandler(FileUploadHandler):
     """
     Tracks progress for file uploads.

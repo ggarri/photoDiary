@@ -5,7 +5,7 @@ var services = {
 		login: 'login',
 		getRegisterForm: 'getRegisterForm',
 		photos: {
-			getTmpPhotos : 'getTmpPhotos',
+			get_tmp_photos : 'get_tmp_photos',
 			addTmpPhoto: 'addTmpPhoto',
 			delTmpPhoto: 'delTmpPhoto',
 			getBoundPhotos: 'getBoundPhotos',

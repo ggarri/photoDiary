@@ -102,7 +102,7 @@ function init(){
 			params: {}
 		},
 		serviceGet:{
-			service: 'getTmpPhotos',
+			service: 'get_tmp_photos',
 			params: {view: 'common/galery.html'}
 		} ,
 		serviceDel: {

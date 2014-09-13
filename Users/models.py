@@ -30,7 +30,7 @@ class User(models.Model):
 	def getPhotosByBound(self, ca_b, ca_j, ea_b, ea_j):
 		from Map.models import *
 
-		coordinates = Coordinate.getByBoundAndUser(self, ca_b, ca_j, ea_b, ea_j);
+		coordinates = Coordinate.get_by_bound_user(self, ca_b, ca_j, ea_b, ea_j);
 		inPhotos = list();
 		for c in coordinates:
 			for p in c.photos.all():

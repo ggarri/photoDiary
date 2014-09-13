@@ -9,24 +9,26 @@ from django.core.cache import cache
 
 from itertools import izip
 import simplejson
-import Image
+from PIL import Image
 import urllib
 import ast
 import os
 import time
 
-from Photos.messages import *
+from Photos.messages import MessageCode
 from Photos.models import *
-from common.UploadProgressHandler import *
+from Common.component.UploadProgressHandler import *
 
 
 def start(request, view):
-	return render_to_response(view, {} , context_instance=Context(request) )
+    return render_to_response(view, {}, context_instance=Context(request) )
 
-def getTmpPhotos(request):
-	user = User.objects.get(pk=request.session['logged']['id'])
-	tmpP = tmpPhoto.objects.filter(owner=user)
-	return render_to_response(request.GET['view'], { 'Photos' : tmpP } , context_instance=Context(request) )
+
+def get_tmp_photos(request):
+    user = User.objects.get(pk=request.session['logged']['id'])
+    tmp = tmpPhoto.objects.filter(owner=user)
+    return render_to_response(request.GET['view'], {'Photos': tmp}, context_instance=Context(request))
+
 
 def getBoundPhotos(request):
 	if request.method == "GET":

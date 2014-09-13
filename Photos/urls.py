@@ -7,9 +7,9 @@ from django.conf.urls.static import static
 #
 
 urlpatterns = patterns('Photos.views',
-	url(r'^$', 'start', {'view':'Galery/galery.html'}),
+	url(r'^$', 'start', {'view':'Public/view/galery.html'}),
     url(r'^addTmpPhoto$', 'addTmpPhoto'),
-    url(r'^getTmpPhotos$', 'getTmpPhotos'),
+    url(r'^get_tmp_photos$', 'get_tmp_photos'),
     url(r'^delTmpPhoto$', 'delTmpPhoto'),
     url(r'^getBoundPhotos$', 'getBoundPhotos'),
     url(r'^getPhotoById$', 'getPhotoById'),

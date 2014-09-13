@@ -47,7 +47,7 @@ def setCoordinate(request):
 		address = ast.literal_eval(urllib.urlopen(url).read())
 		if address['status'] == 'OK':
 			loc = Location()
-			loc.composeAddress(address['results'])
+			loc.compose_address(address['results'])
 			return loc
 		return None
 

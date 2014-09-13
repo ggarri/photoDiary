@@ -34,8 +34,8 @@ class Photo(models.Model):
 		return p
 
 	@staticmethod
-	def getByBound(ca_b, ca_j, ea_b, ea_j):
-		coordinates =Coordinate.getByBound(ca_b, ca_j, ea_b, ea_j);
+	def get_by_bound(ca_b, ca_j, ea_b, ea_j):
+		coordinates =Coordinate.get_by_bound(ca_b, ca_j, ea_b, ea_j);
 		inPhotos = list();
 		for c in coordinates:
 			for p in c.photos.all():
