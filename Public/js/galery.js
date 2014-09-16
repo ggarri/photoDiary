@@ -29,7 +29,7 @@ function init(){
 		callback: function(widget){
 			$('.map-galery').myGalery({
 				serviceGet: {
-					service: 'getBoundPhotos',
+					service: 'get_bound_photos',
 					params_callback: function(){ // Get the current bounds in the map
 						bounds = widget.map.getBounds();
 						return {
@@ -55,7 +55,7 @@ function init(){
 						id : photoId,
 						view : 'Galery/photoInfo.html'
 					};
-					http_request('getPhotoById', 'GET', data, function(data){
+					http_request('get_photo_by_id', 'GET', data, function(data){
 						var context = '.photo-info';
 						// If it has been a error
 						if(data == 'object'){
@@ -70,7 +70,7 @@ function init(){
 								comment: $('.comment', $(context)).val(),
 								title: $('.title', $(context)).html()
 							}
-							http_request('setPhotoById', 'POST', info, function(data){
+							http_request('set_photo_by_id', 'POST', info, function(data){
 								$('#messages').messages('show', data);
 							});
 						});

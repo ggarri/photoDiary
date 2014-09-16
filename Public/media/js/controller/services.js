@@ -6,11 +6,11 @@ var services = {
 		getRegisterForm: 'getRegisterForm',
 		photos: {
 			get_tmp_photos : 'get_tmp_photos',
-			addTmpPhoto: 'addTmpPhoto',
-			delTmpPhoto: 'delTmpPhoto',
-			getBoundPhotos: 'getBoundPhotos',
-			getPhotoById: 'getPhotoById',
-			setPhotoById: 'setPhotoById'
+			add_tmp_photo: 'add_tmp_photo',
+			del_tmp_photo: 'del_tmp_photo',
+			get_bound_photos: 'get_bound_photos',
+			get_photo_by_id: 'get_photo_by_id',
+			set_photo_by_id: 'set_photo_by_id'
 		},
 		map : {
 			getCoordinates: 'getCoordinates',

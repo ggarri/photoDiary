@@ -1,22 +1,12 @@
-from django.shortcuts import get_object_or_404, render_to_response
-from django.http import HttpResponseRedirect, HttpResponse
-from django.core.urlresolvers import reverse
+from django.shortcuts import render_to_response
+from django.http import HttpResponse
 from django.template import Context
 from django.views.decorators.csrf import csrf_exempt
-from django.core.files.uploadedfile import SimpleUploadedFile
-from django.core import serializers
-from django.core.cache import cache
-
-from itertools import izip
-import simplejson
-from PIL import Image
-import urllib
-import ast
-import os
-import time
 
 from Photos.messages import MessageCode
 from Photos.models import *
+
+from Common.component.messages import MessageVO
 from Common.component.UploadProgressHandler import *
 
 
@@ -30,59 +20,63 @@ def get_tmp_photos(request):
     return render_to_response(request.GET['view'], {'Photos': tmp}, context_instance=Context(request))
 
 
-def getBoundPhotos(request):
-	if request.method == "GET":
-		user = User.objects.get(pk=request.session['logged']['id'])
-		data = { 'Photos' : user.getPhotosByBound(request.GET['ca_b'], request.GET['ca_j'], request.GET['ea_b'], request.GET['ea_j']) }
-		return render_to_response(request.GET['view'], data , context_instance=Context(request) )
-	else:
-		result = MessageVO(_type=False, msg=MessageCode._001)
-		return HttpResponse(result.getJSON(), mimetype='application/json')
+def get_bound_photos(request):
+    if request.method == "GET":
+        user = User.objects.get(pk=request.session['logged']['id'])
+        data = {'Photos': user.getPhotosByBound(request.GET['ca_b']
+                                                , request.GET['ca_j']
+                                                , request.GET['ea_b']
+                                                , request.GET['ea_j'])}
+        return render_to_response(request.GET['view'], data, context_instance=Context(request))
+
+    else:
+        result = MessageVO(_type=False, msg=MessageCode._001)
+        return HttpResponse(result.getJSON(), mimetype='application/json')
+
 
 @csrf_exempt
-def delTmpPhoto(request):
-	if request.method == "POST":
-		photo = tmpPhoto.objects.get(pk=request.POST['id'])
-		photo.delete()
-	return HttpResponse()
+def del_tmp_photo(request):
+    if request.method == "POST":
+        photo = tmpPhoto.objects.get(pk=request.POST['id'])
+        photo.delete()
+    return HttpResponse()
 
 @csrf_exempt
-def addTmpPhoto(request):
-	# Create a new temporal photo
-	
-	# request.upload_handlers.insert(0, UploadProgressHandler(request))
+def add_tmp_photo(request):
+    # Create a new temporal photo
+    # request.upload_handlers.insert(0, UploadProgressHandler(request))
+    for name in request.FILES:
+        for _file in request.FILES.getlist('files'):
+            tmpPhoto.create(img=_file, userId=request.session['logged']['id'])
 
-	for name in request.FILES:
-		for _file in request.FILES.getlist('files'):
-			tmpPhoto.create(img=_file, userId=request.session['logged']['id'])
+    # Moving from coordiante photos to temporal ones
+    if 'id' in request.POST:
+        photo = Photo.objects.get(pk=request.POST['id'])
+        photo.moveToTemp()
 
-	# Moving from coordiante photos to temporal ones
-	if 'id' in request.POST:
-		photo = Photo.objects.get(pk=request.POST['id'])
-		photo.moveToTemp()
-
-	return HttpResponse()
+    return HttpResponse()
 
 @csrf_exempt
-def getPhotoById(request):
-	if request.method == "GET":
-		photo = Photo.objects.get(pk=request.GET['id'])
-		return render_to_response(request.GET['view'], {'data': photo} , context_instance=Context(request) )
-	else:
-		result = MessageVO(_type=False, msg=MessageCode._001)
-		return HttpResponse(result.getJSON(), mimetype='application/json')
+def get_photo_by_id(request):
+    if request.method == "GET":
+        photo = Photo.objects.get(pk=request.GET['id'])
+        return render_to_response(request.GET['view'], {'data': photo}, context_instance=Context(request) )
+
+    result = MessageVO(_type=False, msg=MessageCode._001)
+    return HttpResponse(result.getJSON(), mimetype='application/json')
 
 @csrf_exempt
-def setPhotoById(request):
-	if request.method == "POST":
-		photo = Photo.objects.get(pk=request.POST['id'])
-		photo.comment = request.POST['comment']
-		photo.title = request.POST['title']
-		photo.save()
-		result = MessageVO(_type=True, msg=MessageCode._301)
-	else:
-		result = MessageVO(_type=False, msg=MessageCode._001)
-	return HttpResponse(result.getJSON(), mimetype='application/json')
+def set_photo_by_id(request):
+    if request.method == "POST":
+        photo = Photo.objects.get(pk=request.POST['id'])
+        photo.comment = request.POST['comment']
+        photo.title = request.POST['title']
+        photo.save()
+        result = MessageVO(_type=True, msg=MessageCode._301)
+    else:
+        result = MessageVO(_type=False, msg=MessageCode._001)
+
+    return HttpResponse(result.getJSON(), mimetype='application/json')
 
 
 def upload_progress(request):
@@ -108,5 +102,4 @@ def upload_progress(request):
             data = cache.get(cache_key)
             return HttpResponse(simplejson.dumps(data))
         else:
-            return HttpResponseServerError(
-                'Server Error: You must provide X-Progress-ID header or query param.')
+            return HttpResponseServerError('Server Error: You must provide X-Progress-ID header or query param.')

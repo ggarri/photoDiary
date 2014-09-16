@@ -1,4 +1,4 @@
-from Common.component.messages import *
+from Common.component.messages import MessageGlobal
 
 
 class MessageCode(MessageGlobal):

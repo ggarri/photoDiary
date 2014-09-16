@@ -1,6 +1,4 @@
-from django.db import models
-
-from PIL import Image, ImageOps
+from PIL import Image
 from django.core.files import File
 import StringIO
 import os

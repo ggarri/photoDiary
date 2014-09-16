@@ -98,7 +98,7 @@ function init(){
 	// Displaying temporal galery in the bottom
 	$('.tmp-galery').myGalery({
 		serviceAdd: {
-			service: 'addTmpPhoto',
+			service: 'add_tmp_photo',
 			params: {}
 		},
 		serviceGet:{
@@ -106,7 +106,7 @@ function init(){
 			params: {view: 'common/galery.html'}
 		} ,
 		serviceDel: {
-			service: 'delTmpPhoto',
+			service: 'del_tmp_photo',
 			params: {}
 		},
 		context: '#main-area',
