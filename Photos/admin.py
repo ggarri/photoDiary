@@ -1,4 +1,4 @@
-from Photos.models import Photo, tmpPhoto
+from Photos.models import Photo, tmp_photo
 #from MagicController.models import MagicCombination
 from django.contrib import admin
 
