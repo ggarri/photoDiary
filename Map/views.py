@@ -91,8 +91,8 @@ def getCoordinateSearch(request):
 @csrf_exempt
 def setCoordinatePhoto(request):
 	if request.method == 'POST':
-		tmp = tmpPhoto.objects.get(pk=request.POST['id'])
-		tmp.moveToCoor(request.session['logged']['id'], request.POST['coordinateId'])
+		tmp = tmp_photo.objects.get(pk=request.POST['id'])
+		tmp.move_to_coor(request.session['logged']['id'], request.POST['coordinateId'])
 		result = MessageVO(_type=True, msg=MessageCode._201)
 	else:
 		result = MessageVO(_type=False, msg=MessageCode._001)

@@ -30,14 +30,14 @@ function init(){
 
 	$('.reject').die().live('click', function(){
     	var requestId = $(this).parent().attr('id');
-    	http_request('rejectRequest','POST',{'requestId':requestId}, function(data){
+    	http_request('reject_request','POST',{'requestId':requestId}, function(data){
     		update();
     	});
     });
 
     $('.accept').die().live('click', function(){
     	var requestId = $(this).parent().attr('id');
-    	http_request('acceptRequest','POST',{'requestId':requestId}, function(data){
+    	http_request('accept_request','POST',{'requestId':requestId}, function(data){
     		update();
     	});
     });

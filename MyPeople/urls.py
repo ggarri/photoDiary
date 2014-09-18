@@ -13,7 +13,7 @@ urlpatterns = patterns('',
 	url(r'^delFriend$', 'MyPeople.views.delFriend'),
 	url(r'^getFriends$', 'MyPeople.views.getFriends'),
 	url(r'^getRequests$', 'MyPeople.views.getRequests'),
-	url(r'^acceptRequest$', 'MyPeople.views.acceptRequest'),
-	url(r'^rejectRequest$', 'MyPeople.views.rejectRequest'),
+	url(r'^accept_request$', 'MyPeople.views.accept_request'),
+	url(r'^reject_request$', 'MyPeople.views.reject_request'),
 )
 

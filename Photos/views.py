@@ -23,7 +23,7 @@ def get_tmp_photos(request):
 def get_bound_photos(request):
     if request.method == "GET":
         user = User.objects.get(pk=request.session['logged']['id'])
-        data = {'Photos': user.getPhotosByBound(request.GET['ca_b'],
+        data = {'Photos': user.get_photos_by_bound(request.GET['ca_b'],
                                                 request.GET['ca_j'],
                                                 request.GET['ea_b'],
                                                 request.GET['ea_j'])}

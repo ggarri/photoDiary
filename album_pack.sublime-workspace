@@ -365,7 +365,7 @@
 			],
 			[
 				"tmp",
-				"tmpPhoto"
+				"tmp_photo"
 			],
 			[
 				"si",
@@ -834,7 +834,7 @@
 			"]\n",
 			"composeData",
 			"messages",
-			"tmpPhoto.create",
+			"tmp_photo.create",
 			"re",
 			"redirect",
 			"selfAutocomplete",

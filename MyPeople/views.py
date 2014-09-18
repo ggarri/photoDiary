@@ -27,15 +27,15 @@ def getRequests(request):
 	return render_to_response('MyPeople/requests.html', {'requests': user.requests.filter(pending=True) } , context_instance=Context(request) )
 
 @csrf_exempt
-def acceptRequest(request):
+def accept_request(request):
 	user = User.objects.get(pk=request.session['logged']['id'])
-	user.acceptRequest(request.POST['requestId'])
+	user.accept_request(request.POST['requestId'])
 	return render_to_response('MyPeople/friends.html', {} , context_instance=Context(request) )
 
 @csrf_exempt
-def rejectRequest(request):
+def reject_request(request):
 	user = User.objects.get(pk=request.session['logged']['id'])
-	user.rejectRequest(request.POST['requestId'])
+	user.reject_request(request.POST['requestId'])
 	return render_to_response('MyPeople/friends.html', {} , context_instance=Context(request) )
 
 def searchByName(request):
@@ -47,7 +47,7 @@ def searchByName(request):
 def addFriend(request):
 	user = User.objects.get(pk=request.session['logged']['id'])
 	if request.method == 'POST':
-		user.addRequest(request.POST['userId'])
+		user.add_request(request.POST['userId'])
 		return HttpResponse({}, mimetype='application/json')
 	return HttpResponse(simplejson.dumps({'result':False, 'description':"Incorrect method"}), mimetype='application/json')
 

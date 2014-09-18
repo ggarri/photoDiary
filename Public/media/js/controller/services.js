@@ -29,8 +29,8 @@ var services = {
 			delFriend: 'delFriend',
 			getFriends: 'getFriends',
 			getRequests: 'getRequests',
-			acceptRequest: 'acceptRequest',
-			rejectRequest: 'rejectRequest',
+			accept_request: 'accept_request',
+			reject_request: 'reject_request',
 		}
 
 	},
