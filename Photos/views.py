@@ -16,7 +16,7 @@ def start(request, view):
 
 def get_tmp_photos(request):
     user = User.objects.get(pk=request.session['logged']['id'])
-    tmp = tmp_photo.objects.filter(owner=user)
+    tmp = TmpPhoto.objects.filter(owner=user)
     return render_to_response(request.GET['view'], {'Photos': tmp}, context_instance=Context(request))
 
 
@@ -37,7 +37,7 @@ def get_bound_photos(request):
 @csrf_exempt
 def del_tmp_photo(request):
     if request.method == "POST":
-        photo = tmp_photo.objects.get(pk=request.POST['id'])
+        photo = TmpPhoto.objects.get(pk=request.POST['id'])
         photo.delete()
     return HttpResponse()
 
@@ -47,7 +47,7 @@ def add_tmp_photo(request):
     # Create a new temporal photo
     # request.upload_handlers.insert(0, UploadProgressHandler(request))
     for _file in request.FILES.getlist('files'):
-        tmp_photo.create(img=_file, userId=request.session['logged']['id'])
+        TmpPhoto.create(img=_file, userId=request.session['logged']['id'])
 
     # Moving from coordiante photos to temporal ones
     if 'id' in request.POST:

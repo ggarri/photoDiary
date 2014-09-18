@@ -24,11 +24,11 @@ var services = {
 			get_coordinatesearch: 'get_coordinatesearch'
 		},
 		myPeople: {
-			searchByName: 'searchByName',
-			addFriend: 'addFriend',
-			delFriend: 'delFriend',
-			getFriends: 'getFriends',
-			getRequests: 'getRequests',
+			search_by_name: 'search_by_name',
+			add_friend: 'add_friend',
+			del_friend: 'del_friend',
+			get_friends: 'get_friends',
+			get_requests: 'get_requests',
 			accept_request: 'accept_request',
 			reject_request: 'reject_request',
 		}

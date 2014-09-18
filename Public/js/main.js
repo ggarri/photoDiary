@@ -1,12 +1,12 @@
 function init(){
 	var updateListFriends = function(){
-		http_request('getFriends','GET',{}, function(data){
+		http_request('get_friends','GET',{}, function(data){
 			$('.friends').html(data);
 		});	
 	};
 
 	var updateListRequests = function(){
-		http_request('getRequests','GET',{}, function(data){
+		http_request('get_requests','GET',{}, function(data){
 			$('.requests').html(data);
 		});	
 	};
@@ -18,7 +18,7 @@ function init(){
 
 	// Adding a searching input field to locate places in the map
 	$('.userName').selfAutocomplete({
-		service: 'searchByName',
+		service: 'search_by_name',
 		accesor : [],
 		label: ['fields','name'],
 		key: ['pk'],
@@ -44,14 +44,14 @@ function init(){
 
 	$('.delete').die().live('click', function(){
     	var userId = $(this).parent().attr('id');
-    	http_request('delFriend','POST',{'userId':userId}, function(data){
+    	http_request('del_friend','POST',{'userId':userId}, function(data){
     		update();
     	});
     });
 
     $('.add').die().live('click', function(){
     	var userId = $('.userId').val();
-    	http_request('addFriend','POST',{'userId':userId}, function(data){
+    	http_request('add_friend','POST',{'userId':userId}, function(data){
     		update();
     	});
     });
