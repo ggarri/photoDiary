@@ -16,7 +16,7 @@ function init(){
 			});
 			marker.setIcon(widget.icons['blue']);
 			console.log(marker, marker.zIndex);
-			http_request('getCoordinatePhotos', 'GET', {coordinateId : marker.zIndex}, function(data){
+			http_request('get_coordinate_photos', 'GET', {coordinateId : marker.zIndex}, function(data){
 				$('.tumbPhoto .photo',$('.map-galery')).removeAttr('selected');
 				$.each(data, function(key,item){
 					$('.tumbPhoto[id='+item["id"]+'] .photo',$('.map-galery')).attr('selected', 'selected');

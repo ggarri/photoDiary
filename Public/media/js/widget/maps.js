@@ -112,7 +112,7 @@ $(document).ready(function() {
 
 		    coordinates: function(args){
 				var widget = this;
-				http_request('getCoordinates', 'GET', {}, function(data){
+				http_request('get_coordinates', 'GET', {}, function(data){
 					if(!$P.empty(data)){
 						$.each(data, function(key, item){
 							widget.addMarker({

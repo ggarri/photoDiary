@@ -11,10 +11,10 @@
 // 			types : {
 // 				Coordinate : function(id, myMap, context){
 // 					var widget = this;
-// 					http_request.getCoordinateById(id, 'Map/marker_form.html', function(data){
+// 					http_request.get_coordinate_by_id(id, 'Map/marker_form.html', function(data){
 // 						$(context).html(data);
 // 						$('button.del', $(context)).unbind('click').click(function(ev){
-// 							http_request.delCoordinateById(id, function(data){
+// 							http_request.del_coordinate_by_id(id, function(data){
 // 								myMap.delMarker(data['id']);
 // 								$(context).empty()
 // 							});

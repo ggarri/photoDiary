@@ -13,15 +13,15 @@ var services = {
 			set_photo_by_id: 'set_photo_by_id'
 		},
 		map : {
-			getCoordinates: 'getCoordinates',
-			getCoordinateById: 'getCoordinateById',
-			setCoordinate: 'setCoordinate',
-			setCoordinatePhoto: 'setCoordinatePhoto',
-			setCoordinateTitle: 'setCoordinateTitle',
-			delCoordinateById: 'delCoordinateById',
-			delCoordinatePhoto: 'delCoordinatePhoto',
-			getCoordinatePhotos: 'getCoordinatePhotos',
-			getCoordinateSearch: 'getCoordinateSearch'
+			get_coordinates: 'get_coordinates',
+			get_coordinate_by_id: 'get_coordinate_by_id',
+			set_coordinate: 'set_coordinate',
+			set_coordinate_photo: 'set_coordinate_photo',
+			set_coordinate_title: 'set_coordinate_title',
+			del_coordinate_by_id: 'del_coordinate_by_id',
+			del_coordinate_photo: 'del_coordinate_photo',
+			get_coordinate_photos: 'get_coordinate_photos',
+			get_coordinatesearch: 'get_coordinatesearch'
 		},
 		myPeople: {
 			searchByName: 'searchByName',

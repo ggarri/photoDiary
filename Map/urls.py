@@ -13,22 +13,22 @@ from Map.models import *
 
 urlpatterns = patterns('Map.views', # Prefix for callback dispacher
     url(r'^$', 'start', {'view': 'Map/map.html'}),
-    url(r'^getCoordinates$', 'getCoordinates'),
-    # url(r'^getCoordinates$', 
+    url(r'^get_coordinates$', 'get_coordinates'),
+    # url(r'^get_coordinates$',
     #     ListView.as_view(
     #         queryset=Coordinate.objects.all(),
     #         context_object_name='data',
     #         template_name='Map/main.html')),
-    url(r'^getCoordinateById$', 'getCoordinateById'),
-    # url(r'^getCoordinateById/(?P<pk>\d+)$',
+    url(r'^get_coordinate_by_id$', 'get_coordinate_by_id'),
+    # url(r'^get_coordinate_by_id/(?P<pk>\d+)$',
     #     DetailView.as_view(
     #         model=Coordinate,
     #         template_name='Map/marker_form.html')),
-    url(r'^getCoordinateSearch$', 'getCoordinateSearch'),
-    url(r'^delCoordinatePhoto$', 'delCoordinatePhoto'),
-    url(r'^setCoordinatePhoto$', 'setCoordinatePhoto'),
-    url(r'^setCoordinateTitle$', 'setCoordinateTitle'),
-    url(r'^setCoordinate$', 'setCoordinate'),
-    url(r'^delCoordinateById$', 'delCoordinateById'),
-    url(r'^getCoordinatePhotos$', 'getCoordinatePhotos'),
+    url(r'^get_coordinatesearch$', 'get_coordinatesearch'),
+    url(r'^del_coordinate_photo$', 'del_coordinate_photo'),
+    url(r'^set_coordinate_photo$', 'set_coordinate_photo'),
+    url(r'^set_coordinate_title$', 'set_coordinate_title'),
+    url(r'^set_coordinate$', 'set_coordinate'),
+    url(r'^del_coordinate_by_id$', 'del_coordinate_by_id'),
+    url(r'^get_coordinate_photos$', 'get_coordinate_photos'),
 )

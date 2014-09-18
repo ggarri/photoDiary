@@ -16,7 +16,7 @@ function init(){
 				'lat': event.latLng.lat(),
 				'lng': event.latLng.lng()
 			};
-			http_request('setCoordinate', 'POST', data, function(data){
+			http_request('set_coordinate', 'POST', data, function(data){
 				$('#messages').messages('show', {type:true, description:'Coordinate added correctly'});
 				var marker = widget.addMarker({
 					location : event.latLng,
@@ -32,14 +32,14 @@ function init(){
 				'lng': event.latLng.lng(),
 				'id': marker.zIndex
 			}
-			http_request('setCoordinate', 'POST', data, function(data){
+			http_request('set_coordinate', 'POST', data, function(data){
 				$('#messages').messages('show', {type:true, description:'Marker spot updated correctly'});
 			});
 		},
 		markerClick: function(widget, marker, event){
 			var id = marker.zIndex;
 			widget.selectMarker(id);
-			http_request('getCoordinateById', 'GET', {'id':id, 'view':'Map/markerInfo.html'}, function(data){
+			http_request('get_coordinate_by_id', 'GET', {'id':id, 'view':'Map/markerInfo.html'}, function(data){
 				// Service returns a warning message
 				if(typeof(data) == 'object'){ 
 					$('#messages').messages('show', data);
@@ -49,20 +49,20 @@ function init(){
 				widget.infowindow.setContent(data);	
 				$(widget.options.contextGalery).myGalery({
 					serviceAdd: {
-						service: 'setCoordinatePhoto', 
+						service: 'set_coordinate_photo',
 						params:{
 							coordinateId: id	
 						}
 					},
 					serviceGet: {
-						service: 'getCoordinatePhotos',
+						service: 'get_coordinate_photos',
 						params:{
 							coordinateId: id,
 							view: 'common/galery.html'
 						}
 					},
 					serviceDel: {
-						service: 'delCoordinatePhoto', 
+						service: 'del_coordinate_photo',
 						params:{
 							coordinateId: id	
 						}
@@ -79,7 +79,7 @@ function init(){
 			var context = '.marker-info';
 			$('button.del', $(context)).unbind('click').click(function(ev){
 				ev.stopPropagation();
-				http_request('delCoordinateById', 'POST', {'id': id}, function(data){
+				http_request('del_coordinate_by_id', 'POST', {'id': id}, function(data){
 					$(widget.options.contextGalery).empty();
 					$('#messages').messages('show', {type:true, description:'Coordinate deleted correctly'});
 					widget.delMarker(data['id']);
@@ -88,7 +88,7 @@ function init(){
 			});
 			$('.title[contentEditable="true"]', $(context)).blur(function(){
 				var title = $(this).html();
-				http_request('setCoordinateTitle', 'POST', {'id':id, 'title':title}, function(data){
+				http_request('set_coordinate_title', 'POST', {'id':id, 'title':title}, function(data){
 					$('#messages').messages('show', {type:true, description:'Title saved correctly'});
 				});
 			});
